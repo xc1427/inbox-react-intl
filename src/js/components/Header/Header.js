@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { FormattedMessage } from 'react-intl';
 import SubHeader from './SubHeader';
-import styles from './Header.scss';
+import styles from './Header.css';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 

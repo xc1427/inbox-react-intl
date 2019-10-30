@@ -9,10 +9,10 @@ new WebpackDevServer(webpack(config), { // Start a server
   historyApiFallback: true,
   headers: { 'Access-Control-Allow-Origin': '*' }, // Allow CORS requests
   quiet: true // Without logging
-}).listen(3000, 'localhost', function(err) {
+}).listen(3001, 'localhost', function(err) {
   if (err) {
     console.error(err);
   } else {
-    console.info('==> Server started. Listening at http://localhost:3000');
+    console.info('==> Server started. Listening at http://localhost:3001');
   }
 });

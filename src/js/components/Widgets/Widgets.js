@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { injectIntl, defineMessages } from 'react-intl';
 import Widget from './Widget';
-import styles from './Widgets.scss';
+import styles from './Widgets.css';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
@@ -39,6 +39,8 @@ const messages = defineMessages({
     defaultMessage: 'I love React so much!',
   },
 });
+
+console.log('result of defineMessage', messages);
 
 class Widgets extends Component {
   static propTypes = {

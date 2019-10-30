@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import styles from './Widgets.scss';
+import styles from './Widgets.css';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 

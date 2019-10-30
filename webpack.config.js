@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const entry = [
   'babel-polyfill',
-  'webpack-dev-server/client?http://localhost:3000', // Needed for hot reloading
+  'webpack-dev-server/client?http://localhost:3001', // Needed for hot reloading
   path.join(__dirname, 'src/js/index.js') // Start with js/index.js
 ];
 // Output
@@ -20,14 +20,16 @@ const plugins = [
   new webpack.optimize.OccurenceOrderPlugin(),
   new HtmlWebpackPlugin({
     template: 'index.html', // Move the index.html file
-    inject: true
+    inject: true,
   }),
 ];
 
 const loaders = [
   { test: /\.js$/, loader: 'babel', exclude: path.join(__dirname, '/node_modules/') },
-  { test: /\.scss$/, loaders: ["style", "css", "sass"] },
-  { test: /\.css$/, loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]!resolve-url?outputStyle=expanded' },
+  {
+    test: /\.css$/,
+    loader: 'style-loader!css-loader',
+  },
   { test: /\.jpe?g$|\.gif$|\.png$/i, loader: 'url-loader?limit=8000' },
   { test: /\.json$/, loader: 'json' },
 ];
@@ -36,8 +38,8 @@ const preLoaders = [
   {
     test: /\.js$/,
     loaders: ['eslint-loader'],
-    exclude: [path.join(__dirname, '/node_modules/'), path.join(__dirname, '/build/')]
-  }
+    exclude: [path.join(__dirname, '/node_modules/'), path.join(__dirname, '/build/')],
+  },
 ];
 
 const resolve = {
@@ -46,15 +48,15 @@ const resolve = {
 };
 
 module.exports = {
-  entry: entry,
-  output: output,
+  entry,
+  output,
   module: {
-    preLoaders: preLoaders,
-    loaders: loaders
+    preLoaders,
+    loaders,
   },
-  resolve: resolve,
-  plugins: plugins,
+  resolve,
+  plugins,
   target: 'web', // Make web variables accessible to webpack, e.g. window
   stats: false, // Don't show stats in the console
-  progress: true
+  progress: true,
 };
