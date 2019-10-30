@@ -1,0 +1,13 @@
+{ "en": {
+  "Header.greeting": "Welcome to your dashboard, {name}!",
+  "SubHeader.unreadCount": "You have {unreadCount} new {notifications}",
+  "SubHeader.lastLogin": "You last logged in {time}",
+  "Widgets.widget1.header": "Creative header",
+  "Widgets.widget1.body": "Mark todays date: {date}",
+  "Widgets.widget2.header": "Here is another widget",
+  "Widgets.widget2.body": "Hello. How is your day going?",
+  "Widgets.widget3.header": "Yet another widget",
+  "Widgets.widget3.body": "What is the meaning of life, my friend?",
+  "Widgets.widget4.header": "This is the last widget",
+  "Widgets.widget4.body": "I love React so much!"
+} }

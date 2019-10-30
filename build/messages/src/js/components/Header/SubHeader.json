@@ -1,0 +1,10 @@
+[
+  {
+    "id": "SubHeader.unreadCount",
+    "defaultMessage": "You have {unreadCount} new {notifications}"
+  },
+  {
+    "id": "SubHeader.lastLogin",
+    "defaultMessage": "You last logged in {time}"
+  }
+]

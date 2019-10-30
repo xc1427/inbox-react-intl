@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Widgets.widget1.header",
+    "defaultMessage": "Creative header"
+  },
+  {
+    "id": "Widgets.widget1.body",
+    "defaultMessage": "Mark todays date: {date}"
+  },
+  {
+    "id": "Widgets.widget2.header",
+    "defaultMessage": "Here is another widget"
+  },
+  {
+    "id": "Widgets.widget2.body",
+    "defaultMessage": "Hello. How is your day going?"
+  },
+  {
+    "id": "Widgets.widget3.header",
+    "defaultMessage": "Yet another widget"
+  },
+  {
+    "id": "Widgets.widget3.body",
+    "defaultMessage": "What is the meaning of life, my friend?"
+  },
+  {
+    "id": "Widgets.widget4.header",
+    "defaultMessage": "This is the last widget"
+  },
+  {
+    "id": "Widgets.widget4.body",
+    "defaultMessage": "I love React so much!"
+  }
+]
